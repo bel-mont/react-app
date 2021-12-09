@@ -1,0 +1,4 @@
+* @bel-mont
+*.js @bel-mont
+*.yml @bel-mont
+/public/ @bel-mont
