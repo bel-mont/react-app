@@ -4280,8 +4280,8 @@ async function run() {
     const body = core.getInput('body');
     const assignees = core.getInput('assignees');
 
-    const oktokit = new github.getOctokit(token);
-    const response = await oktokit.issues.create({
+    const oktokit = github.getOctokit(token);
+    const response = await oktokit.rest.issues.create({
       ...github.context.repo,
       title,
       body,
