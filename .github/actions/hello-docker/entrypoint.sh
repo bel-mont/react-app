@@ -15,4 +15,9 @@ echo "more stuff"
 echo "finishing stuff"
 echo "::endgroup::"
 
+if [true]
+then
+    echo 'error'
+    exit 1
+fi
 echo "::set-env name=HELLO::hello"
